@@ -1,0 +1,55 @@
+$green: #37802C;
+$darkGreen: #07190B;
+$lightGreen: #5F962C;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+body{
+    background: $green;
+}
+
+#contant{
+    width: 800px;
+    margin: 150px auto 0;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 15px $darkGreen;
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+    #box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 40px;
+
+        .act{
+            padding: 45px 0;
+            text-align: center;
+            text-decoration: none;
+            color: $lightGreen;
+            font-size: 24px;
+            border-radius: 20px;
+            border: 5px solid $lightGreen;
+
+            &:hover{
+                background: $lightGreen;
+                border: none;
+                color: white;
+            }
+        }
+    }
+
+    .logout{
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+    }
+}
